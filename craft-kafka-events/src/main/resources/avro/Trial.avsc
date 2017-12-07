@@ -1,0 +1,92 @@
+{
+  "type": "record",
+  "name": "Trial",
+  "namespace": "Signup",
+  "fields": [
+    {
+      "name": "country",
+      "type": "string"
+    },
+    {
+      "name": "event_timestamp",
+      "type": "long"
+    },
+    {
+      "name": "company_id",
+      "type": "string"
+    },
+    {
+      "name": "Message_dims",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "Message_dims",
+          "fields": [
+            {
+              "name": "channel",
+              "type": "string",
+              "doc": "Channel from where the event has been generated."
+            },
+            {
+              "name": "item",
+              "type": "string",
+              "doc": "The Intuit item for which the event has been generated."
+            }
+          ]
+        }
+      ],
+      "doc": "Message dimensions for the event.",
+      "default": null
+    },
+    {
+      "name": "Message_facts",
+      "type": [
+        "null",
+        {
+          "type": "record",
+          "name": "Message_facts",
+          "fields": [
+            {
+              "name": "quantity",
+              "type": "int",
+              "doc": "Quantity"
+            },
+            {
+              "name": "product_price",
+              "type": "double",
+              "doc": "Product price"
+            },
+            {
+              "name": "currency",
+              "type": "string",
+              "doc": "Currency"
+            },
+            {
+              "name": "execution_ts",
+              "type": "long",
+              "doc": "Execution timestamp"
+            },
+            {
+              "name": "expiration_ts",
+              "type": "long",
+              "doc": "Expiration timestamp"
+            },
+            {
+              "name": "credit_card_type",
+              "type": "string",
+              "doc": "Credit card type"
+            },
+            {
+              "name": "company_email",
+              "type": "string",
+              "doc": "Company email ID"
+            }
+          ]
+        }
+      ],
+      "doc": "Message facts for the event.",
+      "default": null
+    }
+  ]
+}

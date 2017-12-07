@@ -1,0 +1,12 @@
+# IntelliJ project files
+.idea
+.idea/
+*.iml
+out
+gen
+.DS_Store
+derby.log
+metastore_db/
+spark-warehouse/
+craft-kafka-events/target
+craft-spark-streaming/target
