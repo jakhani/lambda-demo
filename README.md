@@ -1,5 +1,7 @@
 # Lambda-demo
 
+Please refer to config directory for all configurations for Kafka and Hadoop setup
+
 ## Start Kafka
 ##### Run Zookeeper
 `cd kafka_2.11-1.0.0 && /bin/zookeeper-server-start.sh config/zookeeper.properties`
